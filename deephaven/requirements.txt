@@ -1,0 +1,5 @@
+--extra-index-url https://pypi.cbhq.net
+psycopg2-binary
+snowflake-connector-python
+sqlalchemy==1.4.9
+cbds==0.0.11

@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  server:
+    container_name: dh_server_jetty
+    build:
+      context: .
+      dockerfile: Dockerfile.deephaven_jetty
+    environment:
+      JAVA_TOOL_OPTIONS: -Xmx7g -Ddeephaven.console.type=python
+    ports:
+      - '10000:10000'
+    volumes:
+      - ./data:/data
+
+
